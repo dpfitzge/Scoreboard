@@ -1,8 +1,55 @@
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
+}
+
+.digital-home, .digital-guest {
+    font-family: 'Cursed Timer ULiL', sans-serif; /* Apply custom font */
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 126.67px;
+    text-align: center;
+    color: #F94F6D; /* Bright red for the score */
+    background-color: black; /* Black box around the score */
+    padding: 20px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners */
+}
+
+#home, #guest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black; /* Border around each section */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+
+#horiHome, #horiGuest {
+    display: flex; /* Arrange buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #f2f2f2; /* Light gray when hovered */
 }
